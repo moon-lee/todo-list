@@ -1,32 +1,57 @@
 {
   "name": "todo-list",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "type": "module",
   "main": "src/main.ts",
   "financeExtension": {
     "id": "todo-list",
     "displayName": "Todo List",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Todo List extension",
-    "activationEvents": ["onView:todo-list"],
+    "activationEvents": [
+      "onView:todo-list"
+    ],
     "contributions": {
-      "views": [{ "id": "todo-list", "name": "Todo List", "icon": "T" }],
-      "commands": [{ "id": "todo-list.hello", "title": "Todo List: Hello" }],
-      "navigation": [{ "id": "todo-list-main", "label": "Todo List", "command": "todo-list.hello", "group": "Todo List" }],
-      "allowedCommands": ["todo-list.hello"],
+      "views": [
+        {
+          "id": "todo-list",
+          "name": "Todo List",
+          "icon": "T"
+        }
+      ],
+      "commands": [
+        {
+          "id": "todo-list.hello",
+          "title": "Todo List: Hello"
+        }
+      ],
+      "navigation": [
+        {
+          "id": "todo-list-main",
+          "label": "Todo List",
+          "command": "todo-list.hello",
+          "group": "Todo List"
+        }
+      ],
+      "allowedCommands": [
+        "todo-list.hello"
+      ],
       "allowedUiEvents": []
     },
+    "main": "src/main.ts",
     "tables": [
       {
         "name": "todo_list_items",
         "columns": [
-          { "name": "title", "type": "text", "nullable": false },
-          { "name": "created_at", "type": "datetime", "nullable": false, "default": "now" }
+          {
+            "name": "title",
+            "type": "text",
+            "nullable": false
+          }
         ]
       }
-    ],
-    "main": "src/main.ts"
+    ]
   },
   "scripts": {
     "dev": "vite",
