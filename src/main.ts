@@ -1,5 +1,6 @@
 import type { FinanceApi } from 'finance';
 import { ExtensionLogger } from 'finance-logger';
+import './styles/tokens.css';
 const logger = new ExtensionLogger('todo-list');
 export async function registerUIComponents(): Promise<void> { if (typeof window !== 'undefined') await import('./ui/index.js'); }
 let _finance: FinanceApi | null = null;
