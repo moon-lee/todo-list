@@ -30,7 +30,7 @@
           "title": "Todo List: Toggle Done"
         },
         {
-          "id": "todo-list.clearCompleted",
+          "id": "todo-list.clear-completed",
           "title": "Todo List: Clear Completed"
         },
         {
@@ -49,7 +49,7 @@
       "allowedCommands": [
         "todo-list.hello",
         "todo-list.toggle",
-        "todo-list.clearCompleted",
+        "todo-list.clear-completed",
         "todo-list.add"
       ],
       "allowedUiEvents": []

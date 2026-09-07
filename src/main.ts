@@ -19,7 +19,7 @@ export async function activate(finance: FinanceApi, ctx: { viewId?: string } & R
     if (!target) throw new Error('No matching todo to toggle.');
     await dao.setDone(target.id, !target.isDone);
   });
-  finance.commands.registerCommand('todo-list.clearCompleted', 'Todo List: Clear Completed', async () => {
+  finance.commands.registerCommand('todo-list.clear-completed', 'Todo List: Clear Completed', async () => {
     const dao = new TodoDao(finance);
     await dao.clearCompleted();
   });
