@@ -1,13 +1,13 @@
 {
   "name": "todo-list",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "private": true,
   "type": "module",
   "main": "src/main.ts",
   "financeExtension": {
     "id": "todo-list",
     "displayName": "Todo List",
-    "version": "0.1.3",
+    "version": "0.1.4",
     "description": "Todo List extension",
     "activationEvents": [
       "onView:todo-list"
@@ -24,6 +24,18 @@
         {
           "id": "todo-list.hello",
           "title": "Todo List: Hello"
+        },
+        {
+          "id": "todo-list.toggle",
+          "title": "Todo List: Toggle Done"
+        },
+        {
+          "id": "todo-list.clearCompleted",
+          "title": "Todo List: Clear Completed"
+        },
+        {
+          "id": "todo-list.add",
+          "title": "Todo List: Add Todo"
         }
       ],
       "navigation": [
@@ -35,7 +47,10 @@
         }
       ],
       "allowedCommands": [
-        "todo-list.hello"
+        "todo-list.hello",
+        "todo-list.toggle",
+        "todo-list.clearCompleted",
+        "todo-list.add"
       ],
       "allowedUiEvents": []
     },
@@ -48,6 +63,12 @@
             "name": "title",
             "type": "text",
             "nullable": false
+          },
+          {
+            "name": "is_done",
+            "type": "boolean",
+            "nullable": false,
+            "default": false
           }
         ]
       }
