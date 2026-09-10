@@ -1,13 +1,13 @@
 {
   "name": "todo-list",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "private": true,
   "type": "module",
   "main": "src/main.ts",
   "financeExtension": {
     "id": "todo-list",
     "displayName": "Todo List",
-    "version": "0.1.5",
+    "version": "0.1.6",
     "themeColor": "#38BDF8",
     "description": "Todo List extension",
     "activationEvents": [
@@ -18,7 +18,7 @@
         {
           "id": "todo-list",
           "name": "Todo List",
-          "icon": "T"
+          "icon": "assets/icon.svg"
         }
       ],
       "commands": [
