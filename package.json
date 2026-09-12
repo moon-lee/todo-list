@@ -8,7 +8,7 @@
     "id": "todo-list",
     "displayName": "Todo List",
     "version": "0.1.7",
-    "themeColor": "#38BDF8",
+    "themeColor": "#F44336",
     "description": "Todo List extension",
     "activationEvents": [
       "onView:todo-list"
