@@ -313,7 +313,7 @@ export class SampleView extends Base {
                   <td style="padding:8px 12px"><input type="checkbox" .checked=${t.isDone} ?disabled=${this.busyIds.has(t.id)} @change=${() => this.toggleTodo(t)} aria-label="Mark ${t.title} ${t.isDone ? 'not done' : 'done'}" /></td>
                   <td style="padding:8px 12px">
                     ${this.editingId === t.id
-                      ? html`<input data-edit-id=${t.id} .value=${this.editingDraft} @input=${this.onEditInput} @keydown=${this.onEditKeydown} ?disabled=${this.busyIds.has(t.id)} />`
+                      ? html`<input class="inline-field-input" style="text-align:left;width:100%" data-edit-id=${t.id} .value=${this.editingDraft} @input=${this.onEditInput} @keydown=${this.onEditKeydown} ?disabled=${this.busyIds.has(t.id)} aria-label="Edit title for ${t.title}" />`
                       : html`<span style=${t.isDone ? 'text-decoration:line-through;opacity:0.7' : ''}>${t.title}</span>`}
                   </td>
                   <td style="padding:8px 12px;white-space:nowrap">
