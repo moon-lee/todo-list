@@ -1,13 +1,13 @@
 {
   "name": "todo-list",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "private": true,
   "type": "module",
   "main": "src/main.ts",
   "financeExtension": {
     "id": "todo-list",
     "displayName": "Todo List",
-    "version": "0.1.10",
+    "version": "0.1.11",
     "themeColor": "#7B1FA2",
     "description": "Todo List extension",
     "activationEvents": [
@@ -55,7 +55,7 @@
       ],
       "allowedUiEvents": [],
       "configuration": [
-        { "key": "todo-list.themeColor", "type": "string", "label": "Accent color for Todo List icons and panel highlights (hex).", "default": "#38BDF8", "pattern": "^#[0-9A-Fa-f]{6}$", "formatHint": "#RRGGBB", "placeholder": "#38BDF8" }
+        { "key": "todo-list.themeColor", "type": "string", "label": "Accent color for Todo List icons and panel highlights (hex).", "default": "#7B1FA2", "pattern": "^#[0-9A-Fa-f]{6}$", "formatHint": "#RRGGBB", "placeholder": "#7B1FA2" }
       ]
     },
     "main": "src/main.ts",
