@@ -80,7 +80,9 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "node D:/finance_flow_ai/scripts/sdk/cli.mjs build ."
+    "build": "node D:/finance_flow_ai/scripts/sdk/cli.mjs build .",
+    "version:bump": "node scripts/version-bump.mjs",
+    "release": "node scripts/version-bump.mjs && node D:/finance_flow_ai/scripts/sdk/cli.mjs build ."
   },
   "devDependencies": {
     "vite": "^5.4.0",
